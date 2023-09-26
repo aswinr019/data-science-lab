@@ -19,11 +19,7 @@ def find_words_with_substring(wordlist, name):
     output_tuple = (count, indexes)
     return output_tuple
 
-wordlist=[]
-num = int(input("Enter the number of words"))
-for i in range(0,num):
-    print("Enter the word ",i+1)
-    wordlist.append(input())
-name = input("Enter the string")
+wordlist=input("Enter the words to be added to the list, separated by spaces: ").split(" ")
+name = input("Enter the string : ")
 result = find_words_with_substring(wordlist, name)
 print(result)
