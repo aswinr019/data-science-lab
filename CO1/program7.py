@@ -19,8 +19,8 @@ class Complex:
     def multiplication(self,other):
         return Complex((self.real * other.real),(self.imaginary * other.imaginary)) 
     
-    def division(self,other):
-        return Complex((self.real / other.real),(self.imaginary / other.imaginary)) 
+    # def division(self,other):
+    #     return Complex((self.real / other.real),(self.imaginary / other.imaginary)) 
     
     def display(self):
         print(f"{self.real} + {self.imaginary} i")
@@ -36,7 +36,7 @@ imaginary2 = int(input("Enter the imaginary part of complex number two: "))
 complex1 = Complex(real1,imaginary1)
 complex2 = Complex(real2,imaginary2)
 
-print("What operation you want to perform : \n1) Addition\n2) Subtraction\n3) Multiplication\n4) Division\n")
+print("What operation you want to perform : \n1) Addition\n2) Subtraction\n3) Multiplication\n")
 operation = int(input())
 
 if(operation == 1):
@@ -45,6 +45,6 @@ elif(operation == 2):
     Complex.display(complex1.subtraction(complex2))
 elif(operation == 3):
     Complex.display(complex1.multiplication(complex2))
-elif(operation == 4):
-    Complex.display(complex1.division(complex2))
+# elif(operation == 4):
+#     Complex.display(complex1.division(complex2))
         
