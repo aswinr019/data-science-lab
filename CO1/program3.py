@@ -11,5 +11,5 @@ def replace_with_star(string):
 
 replaced = replace_with_star(text)
 
-print("Before reversing: ",text)
+print("Before replacing: ",text)
 print("After replasing: ",replaced)
