@@ -6,8 +6,6 @@ mat = []
 
 n = int(input("Enter the number of row/coluns ( square matrix) ? "))
 
-print(f"Enter {n*n} elements : ")
-
 for i in range(n):
     row = []
     for j in range(n):
@@ -15,8 +13,7 @@ for i in range(n):
         row.append(element)
     mat.append(row)
 
-print(mat)
 matrix = np.array(mat)
 
-print("Array elements : ",matrix)
-print("Sum of diagonal elements : ",np.trace(matrix))
+print("Array elements : ", matrix)
+print("Sum of diagonal elements : ", np.trace(matrix))

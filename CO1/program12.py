@@ -1,6 +1,6 @@
 # Find the k smallest values of a NumPy array
 
-import numpy as np 
+import numpy as np
 
 
 numbers = []
@@ -9,7 +9,7 @@ n = int(input("How many numbers ? "))
 
 print("Enter the numbers: ")
 
-for i in range(0,n):
+for i in range(n):
     number = int(input())
     numbers.append(number)
 
