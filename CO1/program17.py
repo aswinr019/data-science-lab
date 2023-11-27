@@ -15,5 +15,5 @@ for i in range(dimension):
     sm.append(row)
 
 print(f"Matrix elements: {sm}")
-print(f"Inverse of the matrix: {sm.linalg.inv(sm)}")
-print(f"Determinant of the matrix: {sm.linalg.det(sm)}")
+print(f"Inverse of the matrix: {np.linalg.inv(sm)}")
+print(f"Determinant of the matrix: {np.linalg.det(sm)}")

@@ -3,8 +3,6 @@
 
 import random
 
-from numpy import who
-
 
 def roll_die(number):
     occurrences = [0] * 6
@@ -17,4 +15,7 @@ def roll_die(number):
 number = int(input("Enter the number of times to roll dice: "))
 count = roll_die(number)
 
-print(f"The number of occurrences of each side of die in order (1-6): { count }")
+print("The number of occurrences of each side of die")
+
+for i in range(6):
+    print(f"Side { i + 1} : { count[i] } ")
